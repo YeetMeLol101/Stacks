@@ -4,33 +4,29 @@ namespace Stacks
     {
         static void Main(string[] args)
         {
-            Stack stack = new Stack();
+            Stack Name = new Stack();
 
-            stack.Push("One");//Fix these later
-            stack.Push("Two");
-            stack.Push("Three");
-            Push(stack, ref top, "Four");
+            Name.Push("One");//Fix these later
+            Name.Push("Two");
+            Name.Push("Three");
+            Name.Push("Four");
 
-            Push(stack, ref top, "Five"); //Stack Overflow at this point
-            Push(stack, ref top, "Six");
-            Push(stack, ref top, "Seven");
-            Push(stack, ref top, "Eight");
-            Push(stack, ref top, "Nine");
-            Push(stack, ref top, "Ten");
+            Name.Push("Five"); //Stack Overflow at this point
+            Name.Push("Six");
+            Name.Push("Seven");
+            Name.Push("Eight");
+            Name.Push("Nine");
+            Name.Push("Ten");
 
-            PrintStack(ref stack);
+            Name.PrintStack();
 
-            Console.WriteLine(Pop(stack, ref top));
-            Console.WriteLine(Pop(stack, ref top));
-            Console.WriteLine(Pop(stack, ref top));
-            Console.WriteLine(Pop(stack, ref top));
-            Console.WriteLine(Pop(stack, ref top)); //Stack Underflow
+            Console.WriteLine(Name.Pop());
+            Console.WriteLine(Name.Pop());
+            Console.WriteLine(Name.Pop());
+            Console.WriteLine(Name.Pop());
+            Console.WriteLine(Name.Pop()); //Stack Underflow
 
-            Console.WriteLine(Peek(stack, ref top));
-            Console.WriteLine(Peek(stack, ref top));
-            Console.WriteLine(Peek(stack, ref top));
-            Console.WriteLine(Peek(stack, ref top));
-            Console.WriteLine(Peek(stack, ref top));
+            Console.WriteLine(Name.Peek());
 
             
 
